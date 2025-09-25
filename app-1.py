@@ -474,7 +474,7 @@ def find_patterns(ticker, stock_data, interval_key, max_base_candles, scan_deman
                                                    exit_date = stock_data.index[m]
                                                    Zone_status = 'Stop loss'
                                                    break  # Exit the loop after stop-loss is hit
-                                               elif stock_data['High'].iloc[m] >= min_low_price and stock_data['Low'].iloc[m] <= max_high_price
+                                               elif stock_data['High'].iloc[m] >= min_low_price and stock_data['Low'].iloc[m] <= max_high_price:
                                                    target_hit = True
                                                    exit_index = m
                                                    exit_date = stock_data.index[m]
